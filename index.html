@@ -35,6 +35,11 @@ h1 span{
 	-ms-user-select:none; 
 	user-select:none;
 }
+.none-select .f{
+	font-family: 'Love Ya Like A Sister', cursive;
+	font-size: 40px;
+	color: #c70012;
+}
 </style>
 <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 </head>
@@ -152,7 +157,7 @@ window.onload=function starttime(){
 		var second = parseInt(time%60);  // 以60秒为一整份 取余 剩下秒数
 //				console.log(hour+":"+minute+":"+second)
 //				alert(hour)
-		obj.innerHTML="<div class=\"none-select\">徐艺<br>我们认识了<br><span>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"了</span><br><span>有你真好<br>希望这个计时器永远不会停止</span></div>"
+		obj.innerHTML="<div class=\"none-select\">徐艺<br>我们认识了<br><span class=\"f\">"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"了</span><br><span>有你真好<br>希望这个计时器永远不会停止</span></div>"
 		
 		return true;
 	}
